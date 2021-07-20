@@ -11,7 +11,7 @@ Pre-requisites to run python async fixtures are:
 
 ### asyncio
 [**asyncio**](https://docs.python.org/3/library/asyncio.html)
-is the Python standard library for writing asynchronous code. 
+is the Python standard library for writing asynchronous code.
 It provides both a High-level and Low-level API for concurrency control.
 \
 You can use this repo to do a quick overview of **asyncio** concepts and features,
