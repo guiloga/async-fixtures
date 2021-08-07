@@ -31,6 +31,17 @@
 # This is to prevent the cancellation of one submitted Task/Future
 # to cause other Task/Future to be cancelled.
 
+# The Task object
+#   class asyncio.Task(coro, *, loop=None, name=None)
+# A Future-like object that runs a Python coroutine. Not thread-safe.
+# Tasks are used to run coroutines in event loops.
+# If a coroutine awaits on a Future, the Task suspends
+# the execution of the coroutine and waits for the completion of the Future.
+# Whe the Future is done, the execution of the wrapped coroutines resumes.
+# Event loops use cooperative scheduling: an event loop runs one Task
+# at a time. While a Task waits for the completion of a Future,
+# the event loop runs other Tasks, callbacks or performs I/O bound operations.
+
 
 import asyncio
 import time
